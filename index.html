@@ -8,7 +8,11 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-ZYT963QBF3');
+        gtag('config', 'G-ZYT963QBF3', {
+
+            'user_id': 'USER_ID'
+
+        });
     </script>
     <!-- Google Tag Manager -->
 <!--    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
@@ -36,6 +40,8 @@
 
         ga('create', 'UA-209311957-1', 'auto');
         ga('send', 'pageview');
+
+
     </script>
     <!-- End Google Analytics -->
 
@@ -52,7 +58,12 @@
 <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXL4SJB"-->
 <!--                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
 <!--&lt;!&ndash; End Google Tag Manager (noscript) &ndash;&gt;-->
-    <p>HELLO siam</p>
-<input type="button" id ="google-button"onclick="location.href='https://google.com';" value="Log in" />
+    <p id ="demo">HELLO siam</p>
+<button onclick="myFunction()">Click me</button>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "hello RATTLEVAI ";
+    }
+</script>
 </body>
 </html>
