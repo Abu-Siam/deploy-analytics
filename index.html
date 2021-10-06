@@ -63,6 +63,12 @@
 <script>
     function myFunction() {
         document.getElementById("demo").innerHTML = "hello RATTLEVAI ";
+        ga('send', 'event', {
+            eventCategory: 'Button Click',
+            eventAction: 'click',
+            eventLabel: event.target.href
+        });
+
     }
 </script>
 </body>
