@@ -65,11 +65,7 @@
 <script>
     function myFunction() {
         document.getElementById("demo").innerHTML = "hello RATTLEVAI ";
-        ga('send', 'event', {
-            eventCategory: 'Button Click',
-            eventAction: 'click',
-            eventLabel: event.target.href
-        });
+        ga('send', {'hitType': 'event', 'eventCategory': 'categoryPdf', 'eventAction': 'clickAction', 'eventLabel': 'myLabel' });
 
     }
 </script>
