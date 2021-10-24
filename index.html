@@ -11,7 +11,10 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-4M8M55CV04');
+        gtag('config', 'G-4M8M55CV04',{
+            'User_Name':'Siam',
+            'User_Email': 'Siam@mail.com'
+        });
     </script>
 
     <!-- Google Tag Manager -->
@@ -72,10 +75,8 @@
         document.getElementById("demo").innerHTML = "hello RATTLEVAI ";
         ga('send', {'hitType': 'event', 'eventCategory': 'categoryPdf', 'eventAction': 'clickAction', 'eventLabel': 'myLabel' });
         gtag('event', 'Send My Data', {
-            'Device_info': 'Dell',
-            'Device_Type': 'PC',
-            'User_Name':'Siam',
-            'User_Email': 'Siam@mail.com'
+            'Login':'Siam_login'
+
         });
 
 
