@@ -14,7 +14,9 @@
         gtag('config', 'G-4M8M55CV04',{
             'User_Name':'Siam',
             'User_Email': 'Siam@mail.com',
-            'send_page_view': false
+            'send_page_view': false,
+            'send_User_Name': false,
+            'send_User_Email': false,
         }
 
         );
@@ -76,12 +78,13 @@
 <script>
     function myFunction() {
         document.getElementById("demo").innerHTML = "hello RATTLEVAI ";
+
         ga('send', {'hitType': 'event', 'eventCategory': 'categoryPdf', 'eventAction': 'clickAction', 'eventLabel': 'myLabel' });
         gtag('event', 'Send My Data', {
             'Login':'Siam_login',
             'send_page_view': false,
 
-        });
+        },{'method': 'Google'});
 
 
     }
